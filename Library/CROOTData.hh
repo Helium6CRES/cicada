@@ -49,6 +49,7 @@ namespace Cicada
             mv_accessible(Double_t, EndFrequency);
             mv_accessible(Double_t, FrequencyWidth);
             mv_accessible(Double_t, Slope);
+            mv_accessible(Double_t, SlopeChange);
             mv_accessible(Double_t, Intercept);
 
             // Track properties obtained by combining the points that belong to the track

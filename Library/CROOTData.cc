@@ -27,7 +27,7 @@ namespace Cicada
             fComponent(0), fAcquisitionID(0), fTrackID(0), fEventID(0), fEventSequenceID(-1), fIsCut(false),
             fStartTimeInRunC(0.), fStartTimeInAcq(0.), fEndTimeInRunC(0.),fTimeLength(0.),
             fStartFrequency(0.), fEndFrequency(0.), fFrequencyWidth(0.),
-            fSlope(0.), fIntercept(0.), fTotalPower(0.),
+            fSlope(0.), fSlopeChange(0.), fIntercept(0.), fTotalPower(0.),
             fNTrackBins(0.), fTotalTrackSNR(0.), fMaxTrackSNR(0.), fTotalTrackNUP(0.), fMaxTrackNUP(0.), fTotalWideTrackSNR(0.), fTotalWideTrackNUP(0.),
             fStartTimeInRunCSigma(0.), fEndTimeInRunCSigma(0.), fTimeLengthSigma(0.),
             fStartFrequencySigma(0.), fEndFrequencySigma(0.), fFrequencyWidthSigma(0.),
@@ -39,7 +39,7 @@ namespace Cicada
             fComponent(orig.fComponent), fAcquisitionID(orig.fAcquisitionID), fTrackID(orig.fTrackID), fEventID(orig.fEventID), fEventSequenceID(orig.fEventSequenceID), fIsCut(orig.fIsCut),
             fStartTimeInRunC(orig.fStartTimeInRunC), fStartTimeInAcq(orig.fStartTimeInAcq), fEndTimeInRunC(orig.fEndTimeInRunC),fTimeLength(orig.fTimeLength),
             fStartFrequency(orig.fStartFrequency), fEndFrequency(orig.fEndFrequency), fFrequencyWidth(orig.fFrequencyWidth),
-            fSlope(orig.fSlope), fIntercept(orig.fIntercept), fTotalPower(orig.fTotalPower),
+            fSlope(orig.fSlope), fSlopeChange(orig.fSlopeChange), fIntercept(orig.fIntercept), fTotalPower(orig.fTotalPower),
             fNTrackBins(orig.fNTrackBins), fTotalTrackSNR(orig.fTotalTrackSNR), fMaxTrackSNR(orig.fMaxTrackSNR), fTotalTrackNUP(orig.fTotalTrackNUP), fMaxTrackNUP(orig.fMaxTrackNUP), fTotalWideTrackSNR(orig.fTotalWideTrackSNR), fTotalWideTrackNUP(orig.fTotalWideTrackNUP),
             fStartTimeInRunCSigma(orig.fStartTimeInRunCSigma), fEndTimeInRunCSigma(orig.fEndTimeInRunCSigma), fTimeLengthSigma(orig.fTimeLengthSigma),
             fStartFrequencySigma(orig.fStartFrequencySigma), fEndFrequencySigma(orig.fEndFrequencySigma), fFrequencyWidthSigma(orig.fFrequencyWidthSigma),
@@ -60,7 +60,7 @@ namespace Cicada
         fComponent = rhs.fComponent; fAcquisitionID = rhs.fAcquisitionID; fTrackID = rhs.fTrackID; fEventID = rhs.fEventID; fEventSequenceID = rhs.fEventSequenceID; fIsCut = rhs.fIsCut;
         fStartTimeInRunC = rhs.fStartTimeInRunC; fStartTimeInAcq = rhs.fStartTimeInAcq; fEndTimeInRunC = rhs.fEndTimeInRunC;fTimeLength = rhs.fTimeLength;
         fStartFrequency = rhs.fStartFrequency; fEndFrequency = rhs.fEndFrequency; fFrequencyWidth = rhs.fFrequencyWidth;
-        fSlope = rhs.fSlope; fIntercept = rhs.fIntercept; fTotalPower = rhs.fTotalPower;
+        fSlope = rhs.fSlope; fSlopeChange = rhs.fSlopeChange; fIntercept = rhs.fIntercept; fTotalPower = rhs.fTotalPower;
         fNTrackBins = rhs.fNTrackBins; fTotalTrackSNR = rhs.fTotalTrackSNR; fMaxTrackSNR = rhs.fMaxTrackSNR; fTotalTrackNUP = rhs.fTotalTrackNUP; fMaxTrackNUP = rhs.fMaxTrackNUP; fTotalWideTrackSNR = rhs.fTotalWideTrackSNR; fTotalWideTrackNUP = rhs.fTotalWideTrackNUP;
         fStartTimeInRunCSigma = rhs.fStartTimeInRunCSigma; fEndTimeInRunCSigma = rhs.fEndTimeInRunCSigma; fTimeLengthSigma = rhs.fTimeLengthSigma;
         fStartFrequencySigma = rhs.fStartFrequencySigma; fEndFrequencySigma = rhs.fEndFrequencySigma; fFrequencyWidthSigma = rhs.fFrequencyWidthSigma;
